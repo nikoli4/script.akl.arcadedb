@@ -32,8 +32,8 @@ logger = logging.getLogger(__name__)
 # Arcade Database online scraper (for MAME).
 # Implementation logic of this scraper is very similar to ScreenScraper.
 #
-# | Site     | http://adb.arcadeitalia.net/                    |
-# | API info | http://adb.arcadeitalia.net/service_scraper.php |
+# | Site     | https://adb.arcadeitalia.net/                    |
+# | API info | https://adb.arcadeitalia.net/service_scraper.php |
 # -------------------------------------------------------------------------------------------------
 class ArcadeDB(Scraper):
     # --- Class variables ------------------------------------------------------------------------
@@ -210,7 +210,7 @@ class ArcadeDB(Scraper):
         logger.debug('ArcadeDB._get_QUERY_MAME() game_name "{0}"'.format(game_name))
 
         # --- Build URL ---
-        url_a = 'http://adb.arcadeitalia.net/service_scraper.php?ajax=query_mame'
+        url_a = 'https://adb.arcadeitalia.net/service_scraper.php?ajax=query_mame'
         url_b = '&game_name={}'.format(game_name)
         url = url_a + url_b
 
@@ -277,7 +277,7 @@ class ArcadeDB(Scraper):
     def _clean_URL_for_log(self, url): return url
 
     # Retrieve URL and decode JSON object.
-    # ArcadeDB API info http://adb.arcadeitalia.net/service_scraper.php
+    # ArcadeDB API info https://adb.arcadeitalia.net/service_scraper.php
     #
     # * ArcadeDB has no API restrictions.
     # * When a game search is not succesfull ArcadeDB returns valid JSON with an empty list.
