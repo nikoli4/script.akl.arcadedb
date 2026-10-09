@@ -1,3 +1,8 @@
+## 1.1.5
+
+- Handle the AKL update-settings command without displaying the scraper help dialog.
+- Preserve the existing statically declared scraper capabilities.
+
 ## 1.1.4
 
 - Updated icon and fanart to the AKL Revival artwork.
